@@ -1,0 +1,29 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+
+        <title>Mickesweb - Password checker</title>
+
+        <meta charset="UTF-8" /> 
+        <meta name="application-name" content="Password checker" />
+        <meta name="description" content="A script to check if the password is strong." />
+        <meta name="keywords" content="Password checker, Strength, Password, Mickesweb" />
+        <meta name="author" content="Mikael Andersson" />
+        <meta name="homepage" content="mickesweb.se" />
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="js/mw.passwordcheck.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to check your password!</h1>
+        
+        <form action="#">
+            <label for="password">Password: </label>
+            <input id="password" type="password" style="width: 160px;" /> 
+            <input id="button" type="submit" value="Finish"/><br/>
+            <div id="passwordStrength" class="no">no password?</div>
+        </form>
+    </body>
+</html>
