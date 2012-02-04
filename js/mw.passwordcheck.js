@@ -19,7 +19,7 @@ $(document).ready(function() {
             $("#passwordStrength").attr("class", "no");
             $("#passwordStrength").html("No password?");
             // Hide the button, shows only if password is good.
-            $("button").attr("class", "hidden");
+            $("#button").attr("class", "hidden");
         } else {
 
             // Calculate the bits using formula from http://en.wikipedia.org/wiki/Password_strength
@@ -40,22 +40,22 @@ $(document).ready(function() {
             if(315360000 < timeToFindOut) {
                 $("#passwordStrength").attr("class","veryGood");
                 $("#passwordStrength").html("Very good password!");
-                $("button").attr("class", "");
+                $("#button").attr("class", "");
             // Takes more than a month to find out.
             } else if(2678400 < timeToFindOut) {
                 $("#passwordStrength").attr("class","good");
                 $("#passwordStrength").html("good password!");
-                $("button").attr("class", "");
+                $("#button").attr("class", "");
             //Takes longer time than one hours to find out.
             } else if(3600 < timeToFindOut) {
                 $("#passwordStrength").attr("class","medium");
                 $("#passwordStrength").html("Medium strength");
-                $("button").attr("class", "hidden");
+                $("#button").attr("class", "hidden");
             // Can be found out on less time than a hours.
             } else {
                 $("#passwordStrength").attr("class","bad");
                 $("#passwordStrength").html("Bad strength!");
-                $("button").attr("class", "hidden");
+                $("#button").attr("class", "hidden");
             }
         }
     });       
